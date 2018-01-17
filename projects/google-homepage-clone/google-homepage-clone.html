@@ -5,13 +5,135 @@
         <title>Google - Clone </title>
         <style>
 
+            body {
+                font-family: arial, sans-serif;
+                font-size: small;
+            }
+
+            .navbar {
+                display: inline;
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                padding-top: 15px;
+                padding-left: 15px;
+                overflow: hidden;
+            }
+
+            .navbar li {
+                float: left;
+            }
+
+            .navbar li a {
+                color: black;
+                text-decoration: none;
+                padding left: 30px;
+                padding-right: 15px;
+            }
+
+            .navbar li a:hover {
+                color:black;
+                text-decoration:underline;
+            }
+
+            .logo {
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            .searchbar {
+                text-align: center;
+                padding-top: 15px;
+            }
+
+            .searchbar div {
+                text-align: left;
+                vertical-align: middle;
+            }
+
+            .center {
+                margin: auto;
+                width: 635px;
+                height: 44px;
+                border-radius: 2px;
+                box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.16), 0px 0px 0px 1px rgba(0,0,0,0.08);
+            }
+
+            .searchbar input {
+                padding-left: 15px;
+                width: 585px;
+                height: 42px;
+                border: none;
+                outline: none;
+            }
+
+            .buttons {
+                text-align: center;
+                padding-top: 30px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .buttons button {
+                height: 40px;
+                border: none;
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                border-radius: 2px;
+                color: #757575;
+                cursor: default;
+                font-family: arial,sans-serif;
+                font-size: 13px;
+                font-weight: bold;
+                margin: 11px 4px;
+                min-width: 54px;
+                padding: 0px 16px;
+                text-align: center;
+            }
+
+            .buttons button:hover {
+                border: solid;
+                border-width: thin;
+                border-color: grey;
+            }
+
         </style>
     </head>
     <body>
         <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#about" style="float:left">About</a></li>
+                <li><a href="#store" style="float:left">Store</a></li>
+                <li style="float:right"><a href="#profile"></a></li>
+                <li style="float:right"><a href="#notifs"></a></li>
+                <li style="float:right"><a href="#grid"></a></li>
+                <li style="float:right"><a href="#images">Images</a></li>
+                <li style="float:right"><a href="#gmail">Gmail</a></li>
+            </ul>
+        </div>
 
         <!-- Logo -->
+        <div class="logo">
+            <img src="media/google-logo.png" alt="It's Goooooooogle!" style="width:300px; height:100px;">
+        </div>
 
         <!-- Search Bar -->
+        <div class="searchbar">
+            <div class="center">
+                <input type="text">
+                <img src="media/google-mic.png" alt="OK Google!" style="width:14px; height:21px; vertical-align:middle">
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button type="button">Google Search</button>
+            <button type="button">I'm Feeling Lucky</button>
+        </div>
+
     </body>
 </html>
